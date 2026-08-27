@@ -29,7 +29,7 @@ function Resume() {
 
               {/* VIEW */}
               <a
-                href="/resume.pdf"
+                href="/Keya_Pandey_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 rounded-2xl border border-[#2A835F]/60 text-[#F2F4F1] text-xl hover:bg-[#2A835F] hover:text-[#F2F4F1] transition duration-300"
@@ -45,7 +45,7 @@ function Resume() {
 
               {/* DOWNLOAD */}
               <a
-                href="/resume.pdf"
+                href="/Keya_Pandey_Resume.pdf"
                 download
                 className="px-8 py-4 rounded-2xl border border-[#2A835F]/60 text-[#F2F4F1] text-xl hover:bg-[#2A835F] hover:text-[#F2F4F1] transition duration-300"
               >
