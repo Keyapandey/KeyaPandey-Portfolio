@@ -1,0 +1,120 @@
+:root {
+  --bg: #092328;
+  --bg-secondary: #12544F;
+  --accent: #2A835F;
+  --accent-light: #8BBB92;
+
+  --text: #F2F4F1;
+  --text-muted: #AFC0BC;
+
+  --border: rgba(139, 187, 146, 0.25);
+  --card: rgba(18, 84, 79, 0.35);
+
+  --shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--text);
+}
+
+/* Smooth scrollbar */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bg-secondary);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* ============================= */
+/* HOME INTRO ANIMATION */
+/* ============================= */
+
+.hello-animation {
+  opacity: 0;
+  transform: scale(0.85);
+  animation: helloPop 0.5s ease-out 0.2s forwards;
+}
+
+.keya-animation {
+  animation: slideFromLeft 1.4s cubic-bezier(0.22, 1, 0.36, 1) 0.9s both;
+}
+
+.pandey-animation {
+  animation: slideFromLeft 1.4s cubic-bezier(0.22, 1, 0.36, 1) 1.5s both;
+}
+
+
+/* HELLO POP */
+
+@keyframes helloPop {
+  0% {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+
+  70% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+/* WHOLE WORD MOVES FROM LEFT */
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
