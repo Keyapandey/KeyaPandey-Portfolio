@@ -144,13 +144,13 @@ function Projects() {
             <div>
 
               <h2 className="text-3xl font-bold mb-3">
-                Lunaraa
+                Abhilekh
               </h2>
 
               <p className="text-[#AFC0BC] text-lg max-w-3xl leading-relaxed mb-5">
-                A modern candle business website showcasing aesthetic candle
-                collections, product previews, and an easy browsing experience
-                for users to explore and purchase handmade candles online.
+                Abhilekh is a secure digital legal case management system that stores case 
+                documents with role-based access, cryptographic integrity verification, and a
+                tamper-evident audit trail of every action.
               </p>
 
               <div className="flex gap-4 flex-wrap">
