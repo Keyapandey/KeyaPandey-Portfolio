@@ -1,12 +1,17 @@
 import { Eye, Download } from "lucide-react";
 
 function Resume() {
+  const resumeUrl =
+    window.location.origin + "/Resume_fixed.pdf";
+
+  const googleViewerUrl =
+    `https://docs.google.com/gview?embedded=1&url=${encodeURIComponent(resumeUrl)}`;
+
   return (
     <div
       id="resume"
       className="min-h-screen bg-[#092328] px-12 py-28 flex items-center justify-center"
     >
-
       <div className="max-w-7xl w-full p-14">
 
         <div className="grid md:grid-cols-2 gap-20 items-start">
@@ -21,7 +26,8 @@ function Resume() {
 
             {/* TEXT */}
             <p className="mt-8 text-[#AFC0BC] text-2xl leading-relaxed max-w-xl">
-              A full overview of my education, technical skills, and Projects. View it online or grab a copy below.
+              A full overview of my education, technical skills, and Projects.
+              View it online or grab a copy below.
             </p>
 
             {/* BUTTONS */}
@@ -29,39 +35,32 @@ function Resume() {
 
               {/* VIEW */}
               <a
-                href="/Keya_Pandey_Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-8 py-4 rounded-2xl border border-[#2A835F]/60 text-[#F2F4F1] text-xl hover:bg-[#2A835F] hover:text-[#F2F4F1] transition duration-300"
-              >
+  href="/keya_resume_1.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-8 py-4 rounded-2xl border border-[#2A835F]/60 text-[#F2F4F1] text-xl hover:bg-[#2A835F] hover:text-[#F2F4F1] transition duration-300"
+>
                 <div className="flex items-center gap-3">
                   <Eye size={22} />
-
-                  <span>
-                    View
-                  </span>
+                  <span>View</span>
                 </div>
               </a>
 
               {/* DOWNLOAD */}
               <a
-                href="/Keya_Pandey_Resume.pdf"
-                download
+                href="/keya_resume_1.pdf"
+                download="Keya_Pandey_Resume.pdf"
                 className="px-8 py-4 rounded-2xl border border-[#2A835F]/60 text-[#F2F4F1] text-xl hover:bg-[#2A835F] hover:text-[#F2F4F1] transition duration-300"
               >
                 <div className="flex items-center gap-3">
                   <Download size={22} />
-
-                  <span>
-                    Download
-                  </span>
+                  <span>Download</span>
                 </div>
               </a>
 
             </div>
 
           </div>
-
 
           {/* RIGHT SIDE */}
           <div>
@@ -73,7 +72,6 @@ function Resume() {
 
             {/* SKILLS */}
             <div className="flex flex-wrap gap-2.5">
-
               {[
                 "Python",
                 "React",
@@ -90,9 +88,7 @@ function Resume() {
                   {skill}
                 </div>
               ))}
-
             </div>
-
 
             {/* EDUCATION CARD */}
             <div className="mt-12 bg-[#12544F]/40 border border-[#8BBB92]/10 rounded-3xl p-10">
@@ -116,7 +112,6 @@ function Resume() {
         </div>
 
       </div>
-
     </div>
   );
 }
